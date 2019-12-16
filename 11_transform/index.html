@@ -1,0 +1,62 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>11_transform</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            width: 666px;
+            height: 666px;
+        }
+        .un, .dos, .tres, .quatre, .cinc, .sis{
+            overflow: hidden;
+        }
+        .dos img{
+            transform: translate(-666px, 0);
+        }
+        .tres img{
+            transform: translate(-1332px, 0);
+        }
+        .quatre img{
+            transform: translate(0, -666px);
+        }
+        .cinc img{
+            transform: translate(-666px, -666px);
+        }
+        .sis img{
+            transform: translate(-1332px, -666px);
+        }
+        .container{
+            display: grid;
+            grid-template: repeat(2, 1fr)/repeat(3, 1fr)
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="un">
+            <img src="img/manuel.jpg" alt="">
+        </div>
+        <div class="dos">
+            <img src="img/manuel.jpg" alt="">
+        </div>
+        <div class="tres">
+            <img src="img/manuel.jpg" alt="">
+        </div>
+        <div class="quatre">
+            <img src="img/manuel.jpg" alt="">
+        </div>
+        <div class="cinc">
+            <img src="img/manuel.jpg" alt="">
+        </div>
+        <div class="sis">
+            <img src="img/manuel.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
